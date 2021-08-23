@@ -9,10 +9,19 @@
     "react-native",
     "360-image-viewer",
     "360-image-react-native",
-    "rn-360-image-viewer"
+    "rn-360-image-viewer",
+    "react-native-image-viewer"
   ],
   "peerDependencies": {
     "react": "^16.13.1",
     "react-native": "^0.63.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigorgtic/image360viewer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rodrigorgtic/image360viewer/issues"
+  },
+  "homepage": "https://github.com/rodrigorgtic/image360viewer/blob/master/README.md"
 }
