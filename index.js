@@ -8,16 +8,7 @@ import {
   ImageProps,
   ImageResizeMode,
   PanResponder,
-  PanResponderGestureState,
 } from 'react-native';
-
-type Props = {
-  height?: number;
-  width?: number;
-  images: ImageProps[];
-  resizeMode?: ImageResizeMode;
-  rotationRatio?: number; // 
-}
 
 /**
  * This is a library that shows images at 350 degrees.
@@ -30,17 +21,17 @@ type Props = {
  * @param {number} rotationRatio 
  * - The drag distance compares to 180 degree. 
  * Example: width / rotationRatio = 180 degree. The value default is 0.5.
- * @param {string} resizeMode 
+ * @param {ImageResizeMode} resizeMode 
  * - Image display mode. Default is contain.
  */
 
-function Image360viewer({
+export function Image360viewer({
   images,
   height = 250,
   width = 250,
   rotationRatio = 0.5,
   resizeMode = 'contain'
-}: Props) {
+}) {
   const [imageIndexSelected, setImageIndexSelected] = useState(0);
 
   const rotation = useRef({ value: width / 2 });
@@ -63,7 +54,7 @@ function Image360viewer({
     }
   })).current;
 
-  function handleUpdateRotation(gestureState: PanResponderGestureState) {
+  function handleUpdateRotation(gestureState) {
     startPositionXAxis.current.value = gestureState.moveX;
 
     const deltaRotation = (currentPositionXAxis.current.value - startPositionXAxis.current.value) * 180 / (rotationRatio * width);
@@ -84,5 +75,3 @@ function Image360viewer({
     </View>
   );
 }
-
-export { Image360viewer }
