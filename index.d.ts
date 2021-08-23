@@ -8,4 +8,4 @@ type Props = {
   rotationRatio?: number;
 }
 
-export function Image360viewer(props: Props): void;
+export function Image360viewer(props: Props): JSX.Element;
