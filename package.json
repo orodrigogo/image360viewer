@@ -3,19 +3,16 @@
   "description": "The 360 image viewer for react native",
   "author": "Rodrigo Gonçalves Santana <rodrigo.rgtic@gmail.com> (https://www.linkedin.com/in/rodrigo-gon%C3%A7alves-santana/)",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "license": "MIT",
   "keywords": [
     "react-native",
     "360-image-viewer",
     "360-image-react-native",
     "rn-360-image-viewer",
-    "react-native-image-viewer"
+    "react-native-image-viewer",
+    "react-component"
   ],
-  "peerDependencies": {
-    "react": "^16.13.1",
-    "react-native": "^0.63.2"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rodrigorgtic/image360viewer.git"
@@ -23,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/rodrigorgtic/image360viewer/issues"
   },
-  "homepage": "https://github.com/rodrigorgtic/image360viewer/blob/master/README.md"
+  "homepage": "https://github.com/rodrigorgtic/image360viewer/blob/master/README.md",
+  "peerDependencies": {
+    "react-native": ">=0.42.0",
+    "react": ">=16.9.35"
+  }
 }
