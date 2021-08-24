@@ -2,6 +2,16 @@
 
 # Image 360 Viewer
 
+- [📚 About](#-about)
+- [🗺 Getting started](#-getting-started)
+- [🎉 Usage](#-usage)
+- [📘 Properties](#-properties)
+- [📱 Demo](#-demo)
+- [👏 Contributing](#-contributing)
+- [💜 License](#-license)
+  
+
+## About
 People want to see all the details of a product before they buy it. Being able to view and explore the product gives the user a trusted experience and connects the user with the product. There are cases where a static image cannot demonstrate all the details of the product. 
 
 The `Image360Viewer` has support for `React Native CLI` and `Expo`. This library allows the user to explore and have the freedom to view all product details in 360 degrees.
@@ -12,7 +22,7 @@ Image360Viewer loads a sequence of images that rotates with a user touch interac
 ![Vector Images](./assets/vector-images.png)
 
 
-## 🗺 Getting started
+## Getting started
 Install the library using:
 
 ```sh
@@ -23,10 +33,7 @@ yarn add image360viewer
 _Image360Viewer requires that you install [`react-native-svg`](https://github.com/react-native-svg/react-native-svg)._
 
 
-
-
-
-## 🎉 Usage
+## Usage
 
 ```ts
 import { Image360viewer } from 'image360viewer';
@@ -43,9 +50,7 @@ export default function App() {
 ```
 
 
-
-
-## 📘 Properties
+## Properties
 
 Image360viewer has the following properties:
 
@@ -63,17 +68,12 @@ Image360viewer has the following properties:
 | `stopColor?: string`           | End color of the gradient line. The value default is #FFF       |
 
 
-
-
-
-## 📱 Demo
+## Demo
 View a demo at Expo Web:
 
 
 
-
-
-## 👏 Contributing 
+## Contributing 
 
 Obrigado por estar interessado em tornar este pacote melhor. Encorajamos todos a ajudar a melhorar este projeto com novos recursos, correções de bugs e melhorias de desempenho.
 
@@ -82,7 +82,7 @@ Obrigado por estar interessado em tornar este pacote melhor. Encorajamos todos a
 
 
 
-## 💜 License
+## License
 
 MIT License © [Rodrigo Gonçalves](https://github.com/rodrigorgtic)
 
