@@ -7,7 +7,7 @@ People want to see all the details of a product before they buy it. Being able t
 The `Image360Viewer` has support for `React Native CLI` and `Expo`. This library allows the user to explore and have the freedom to view all product details in 360 degrees.
 
 
-Image360Viewer loads a sequence of images that rotates with a user touch interaction.
+Image360Viewer loads a sequence of images that rotates with a user touch interaction. See an example of vector images:
 
 ![Vector Images](./assets/vector-images.png)
 
