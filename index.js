@@ -83,13 +83,13 @@ export function Image360viewer({
     const rotationByImages = Math.floor(mRotation / rotatePeriod.current.value);
     setImageIndexSelected(rotationByImages);
 
-    if ((gestureState.moveX - cursorSize) > 0 && gestureState.moveX < (width - cursorSize)) {
+    if ((gestureState.moveX - (cursorSize / 2)) > 0 && gestureState.moveX < (width - (cursorSize / 2))) {
       setCursorCurrentPosition(gestureState.moveX);
     }
   }
 
   return (
-    <View {...panResponder.panHandlers}>
+    <View {...panResponder.panHandlers} style={{ width: '100%', alignItems: 'center' }}>
       <Image
         source={{ uri: images[imageIndexSelected] }}
         style={{ width, height }}

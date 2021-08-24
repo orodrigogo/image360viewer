@@ -23,8 +23,8 @@ export function Cursor({
   const animatedStyle = {
     borderRadius: cursorRadius,
     transform: [
-      { translateX: cursorCurrentPosition - CURSOR_SIZE / 2 },
-      { translateY: Number(getYForX(pathParsed, cursorCurrentPosition)) - (CURSOR_SIZE / 2) }
+      { translateX: cursorCurrentPosition },
+      { translateY: Number(getYForX(pathParsed, cursorCurrentPosition)) - (CURSOR_SIZE / 2) + 3 }
     ]
   }
 
@@ -46,6 +46,7 @@ export function Cursor({
 
 const styles = StyleSheet.create({
   container: {
+    width: '100%',
     position: 'relative',
     marginTop: -55,
     height: 70
