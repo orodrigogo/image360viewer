@@ -1,6 +1,5 @@
+<img src=".github/assets/header.png" width="100%">
 
-
-# Image 360 Viewer
 
 - [📚 About](#about)
 - [🗺 Getting started](#getting-started)
@@ -19,7 +18,7 @@ The `Image360Viewer` has support for `React Native CLI` and `Expo`. This library
 
 Image360Viewer loads a sequence of images that rotates with a user touch interaction. See an example of vector images:
 
-![Vector Images](./assets/vector-images.png)
+![Vector Images](.github/assets/vector-images.png)
 
 
 ## Getting started
