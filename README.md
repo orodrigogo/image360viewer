@@ -2,13 +2,13 @@
 
 # Image 360 Viewer
 
-- [📚 About](#-about)
-- [🗺 Getting started](#-getting-started)
-- [🎉 Usage](#-usage)
-- [📘 Properties](#-properties)
-- [📱 Demo](#-demo)
-- [👏 Contributing](#-contributing)
-- [💜 License](#-license)
+- [📚 About](#about)
+- [🗺 Getting started](#getting-started)
+- [🎉 Usage](#usage)
+- [📘 Properties](#properties)
+- [📱 Demo](#demo)
+- [👏 Contributing](#contributing)
+- [💜 License](#license)
   
 
 ## About
