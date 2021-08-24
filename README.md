@@ -2,7 +2,7 @@
 
 People want to see all the details of a product before they buy it. Being able to view and explore the product gives the user a trusted experience and connects the user with the product. There are cases where a static image cannot demonstrate all the details of the product. 
 
-The `Image360Viewer` has support for React Native CLI and Expo. This library allows the user to explore and have the freedom to view all product details in 360 degrees.
+The `Image360Viewer` has support for `React Native CLI` and `Expo`. This library allows the user to explore and have the freedom to view all product details in 360 degrees.
 
 ## 🗺 Getting started
 Install the library using:
@@ -13,6 +13,8 @@ yarn add image360viewer
 
 
 _Image360Viewer requires that you install [`react-native-svg`](https://github.com/react-native-svg/react-native-svg)._
+
+
 
 
 
@@ -32,6 +34,9 @@ export default function App() {
 }
 ```
 
+
+
+
 ## 📘 Properties
 
 Image360viewer has the following properties:
@@ -47,14 +52,30 @@ Image360viewer has the following properties:
 | `cursorIcon?: ReactNode`       | Content or icon.                          |
 
 
+
+
+
 ## 📱 Demo
 View a demo at Expo
+
+
+
+
 
 ## 👏 Contributing 
 
 Obrigado por estar interessado em tornar este pacote melhor. Encorajamos todos a ajudar a melhorar este projeto com novos recursos, correções de bugs e melhorias de desempenho.
 
 
+
+
+
+
 ## 💜 License
 
 MIT License © [Rodrigo Gonçalves](https://github.com/rodrigorgtic)
+
+
+[![Linkedin Badge](https://img.shields.io/badge/-Linkedin-6633cc?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rodrigo-gon%C3%A7alves-santana/)](https://www.linkedin.com/in/rodrigo-gon%C3%A7alves-santana/) 
+[![Instagram Badge](https://img.shields.io/badge/-Instagram-6633cc?style=flat-square&labelColor=6633cc&logo=instagram&logoColor=white&link=https://www.instagram.com/rodrigo.goncalves.s/)](https://www.instagram.com/rodrigo.goncalves.s/) 
+[![Twitter Badge](https://img.shields.io/badge/-Twitter-6633cc?style=flat-square&logo=Twitter&logoColor=white&link=https://twitter.com/rodrigogsdev)](https://twitter.com/rodrigogsdev) 
