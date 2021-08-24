@@ -58,6 +58,9 @@ Image360viewer has the following properties:
 | `rotationRatio?: number`       | The drag distance compares to 180 degree. |
 | `cursorSize?: number`          | Text                                      |
 | `cursorIcon?: ReactNode`       | Content or icon.                          |
+| `primaryColor?: string`        | First color of the gradient line. The value default is #DA0000  |
+| `secondaryColor?: string`      | Second color of the gradient line. The value default is #EA8C8A |
+| `stopColor?: string`           | End color of the gradient line. The value default is #FFF       |
 
 
 

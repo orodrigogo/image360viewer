@@ -26,10 +26,16 @@ import { Cursor } from './Cursor';
  * Example: width / rotationRatio = 180 degree. The value default is 0.5.
  * @param {ImageResizeMode} resizeMode 
  * - Image display mode. Default is contain.
-  * @param {number} cursorSize
+ * @param {number} cursorSize
  * - Cursor size.
-  * @param {ReactNode} cursorIcon 
+ * @param {ReactNode} cursorIcon 
  * - Content or icon.
+ * @param {string} primaryColor 
+ * - First color of the gradient line. The value default is #DA0000
+ * @param {string} secondaryColor 
+ * - Second color of the gradient line. The value default is #EA8C8A
+ * @param {string} stopColor 
+ * - End color of the gradient line. The value default is #FFF
  */
 
 export function Image360viewer({

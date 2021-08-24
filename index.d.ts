@@ -9,6 +9,9 @@ type Props = {
   rotationRatio?: number;
   cursorSize?: number;
   cursorIcon?: ReactNode;
+  primaryColor?: string;
+  secondaryColor?: string;
+  stopColor?: string;
 }
 
 export function Image360viewer(props: Props): JSX.Element;
