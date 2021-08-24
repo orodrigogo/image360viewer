@@ -8,9 +8,9 @@ import Svg, {
 
 export function LinePath({
   path,
-  primaryColor = '#DA0000',
-  secondaryColor = '#EA8C8A',
-  stopColor = '#FFF',
+  primaryColor,
+  secondaryColor,
+  stopColor,
 }) {
   return (
     <Svg

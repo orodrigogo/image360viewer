@@ -1,12 +1,12 @@
 import { ReactNode } from 'react';
-import { ImageProps, ImageResizeMode } from 'react-native';
+import { ImageResizeMode } from 'react-native';
 
 type Props = {
-  height?: number;
-  width?: number;
-  images: ImageProps[];
+  images: string[];
   resizeMode?: ImageResizeMode;
   rotationRatio?: number;
+  height?: number;
+  width?: number;
   cursorSize?: number;
   cursorIcon?: ReactNode;
   primaryColor?: string;

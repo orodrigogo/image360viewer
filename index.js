@@ -6,8 +6,6 @@ import React, {
 import {
   View,
   Image,
-  ImageProps,
-  ImageResizeMode,
   PanResponder,
 } from 'react-native';
 
@@ -15,8 +13,8 @@ import { Cursor } from './Cursor';
 
 /**
  * This is a library that shows images at 350 degrees.
- * @param {ImageProps[]} images 
- * - Vector images to rotate.
+ * @param {string[]} images 
+ * - Array with URI images to rotate.
  * @param {number} height 
  * - Image height default is 250.
  * @param {number} width 
@@ -24,7 +22,7 @@ import { Cursor } from './Cursor';
  * @param {number} rotationRatio 
  * - The drag distance compares to 180 degree. 
  * Example: width / rotationRatio = 180 degree. The value default is 0.5.
- * @param {ImageResizeMode} resizeMode 
+ * @param {string} resizeMode 
  * - Image display mode. Default is contain.
  * @param {number} cursorSize
  * - Cursor size.
@@ -38,6 +36,7 @@ import { Cursor } from './Cursor';
  * - End color of the gradient line. The value default is #FFF
  */
 
+
 export function Image360viewer({
   images,
   height = 250,
@@ -46,9 +45,9 @@ export function Image360viewer({
   resizeMode = 'contain',
   cursorSize = 40,
   cursorIcon,
-  primaryColor,
-  secondaryColor,
-  stopColor
+  primaryColor = '#DA0000',
+  secondaryColor = '#EA8C8A',
+  stopColor = '#FFF',
 }) {
   const [cursorCurrentPosition, setCursorCurrentPosition] = useState(cursorSize);
   const [imageIndexSelected, setImageIndexSelected] = useState(0);
@@ -84,7 +83,7 @@ export function Image360viewer({
     const rotationByImages = Math.floor(mRotation / rotatePeriod.current.value);
     setImageIndexSelected(rotationByImages);
 
-    if ((gestureState.moveX - (cursorSize / 2)) > 0 && gestureState.moveX < (width - (cursorSize / 2))) {
+    if ((gestureState.moveX - cursorSize) > 0 && gestureState.moveX < (width - cursorSize)) {
       setCursorCurrentPosition(gestureState.moveX);
     }
   }
@@ -92,7 +91,7 @@ export function Image360viewer({
   return (
     <View {...panResponder.panHandlers}>
       <Image
-        source={images[imageIndexSelected]}
+        source={{ uri: images[imageIndexSelected] }}
         style={{ width, height }}
         resizeMode={resizeMode}
       />
@@ -101,6 +100,7 @@ export function Image360viewer({
         width={cursorSize}
         cursorCurrentPosition={cursorCurrentPosition}
         cursorIcon={cursorIcon}
+        color={primaryColor}
         primaryColor={primaryColor}
         secondaryColor={secondaryColor}
         stopColor={stopColor}
