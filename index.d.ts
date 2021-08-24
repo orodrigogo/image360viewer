@@ -1,3 +1,4 @@
+import { ReactNode } from 'react';
 import { ImageProps, ImageResizeMode } from 'react-native';
 
 type Props = {
@@ -6,6 +7,8 @@ type Props = {
   images: ImageProps[];
   resizeMode?: ImageResizeMode;
   rotationRatio?: number;
+  cursorSize: number;
+  cursorIcon: ReactNode;
 }
 
 export function Image360viewer(props: Props): JSX.Element;
