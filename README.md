@@ -57,7 +57,7 @@ Image360viewer has the following properties:
 | :-----------                   | :----------                               |
 | `height?: number`              | Image height default is 250.              |
 | `width?: number`               | Image width default is 250.               |
-| `images?: ImageProps[]`        | Vector images to rotate.                 |
+| `images: string[]`             | Array images to rotate.                 |
 | `resizeMode?: ImageResizeMode` | Image display mode. Default is contain.   |
 | `rotationRatio?: number`       | The drag distance compares to 180 degree. |
 | `cursorSize?: number`          | Text                                      |
