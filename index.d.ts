@@ -7,8 +7,8 @@ type Props = {
   images: ImageProps[];
   resizeMode?: ImageResizeMode;
   rotationRatio?: number;
-  cursorSize: number;
-  cursorIcon: ReactNode;
+  cursorSize?: number;
+  cursorIcon?: ReactNode;
 }
 
 export function Image360viewer(props: Props): JSX.Element;
