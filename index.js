@@ -1,6 +1,7 @@
 import React, {
   useState,
   useRef,
+  ReactNode
 } from 'react';
 import {
   View,
@@ -9,6 +10,8 @@ import {
   ImageResizeMode,
   PanResponder,
 } from 'react-native';
+
+import { Cursor } from './Cursor';
 
 /**
  * This is a library that shows images at 350 degrees.
@@ -23,6 +26,10 @@ import {
  * Example: width / rotationRatio = 180 degree. The value default is 0.5.
  * @param {ImageResizeMode} resizeMode 
  * - Image display mode. Default is contain.
+  * @param {number} cursorSize
+ * - Cursor size.
+  * @param {ReactNode} cursorIcon 
+ * - Content or icon.
  */
 
 export function Image360viewer({
@@ -30,8 +37,14 @@ export function Image360viewer({
   height = 250,
   width = 250,
   rotationRatio = 0.5,
-  resizeMode = 'contain'
+  resizeMode = 'contain',
+  cursorSize = 40,
+  cursorIcon,
+  primaryColor,
+  secondaryColor,
+  stopColor
 }) {
+  const [cursorCurrentPosition, setCursorCurrentPosition] = useState(cursorSize);
   const [imageIndexSelected, setImageIndexSelected] = useState(0);
 
   const rotation = useRef({ value: width / 2 });
@@ -54,6 +67,7 @@ export function Image360viewer({
     }
   })).current;
 
+
   function handleUpdateRotation(gestureState) {
     startPositionXAxis.current.value = gestureState.moveX;
 
@@ -61,16 +75,29 @@ export function Image360viewer({
     rotation.current.value = startRotation.current.value + deltaRotation;
 
     const mRotation = rotation.current.value - Math.floor(rotation.current.value / 360) * 360;
-    setImageIndexSelected(Math.floor(mRotation / rotatePeriod.current.value));
+    const rotationByImages = Math.floor(mRotation / rotatePeriod.current.value);
+    setImageIndexSelected(rotationByImages);
+
+    if ((gestureState.moveX - cursorSize) > 0 && gestureState.moveX < (width - cursorSize)) {
+      setCursorCurrentPosition(gestureState.moveX);
+    }
   }
 
   return (
-    <View {...panResponder.panHandlers} >
+    <View {...panResponder.panHandlers}>
       <Image
         source={images[imageIndexSelected]}
-        style={{ width, height }
-        }
+        style={{ width, height }}
         resizeMode={resizeMode}
+      />
+
+      <Cursor
+        width={cursorSize}
+        cursorCurrentPosition={cursorCurrentPosition}
+        cursorIcon={cursorIcon}
+        primaryColor={primaryColor}
+        secondaryColor={secondaryColor}
+        stopColor={stopColor}
       />
     </View>
   );

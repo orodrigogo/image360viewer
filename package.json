@@ -2,7 +2,7 @@
   "name": "image360viewer",
   "description": "The 360 image viewer for react native",
   "author": "Rodrigo Gonçalves Santana <rodrigo.rgtic@gmail.com> (https://www.linkedin.com/in/rodrigo-gon%C3%A7alves-santana/)",
-  "version": "1.0.2",
+  "version": "1.1.2",
   "main": "index.js",
   "types": "index.d.ts",
   "license": "MIT",
@@ -24,6 +24,12 @@
   "homepage": "https://github.com/rodrigorgtic/image360viewer/blob/master/README.md",
   "peerDependencies": {
     "react-native": ">=0.42.0",
-    "react": ">=16.9.35"
+    "react": ">=16.9.35",
+    "react-native-svg": ">=12.1.1"
+  },
+  "dependencies": {
+    "normalize-svg-path": "^1.1.0",
+    "parse-svg-path": "^0.1.2",
+    "abs-svg-path": "^0.1.1"
   }
 }
