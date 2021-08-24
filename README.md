@@ -1,8 +1,16 @@
+
+
 # Image 360 Viewer
 
 People want to see all the details of a product before they buy it. Being able to view and explore the product gives the user a trusted experience and connects the user with the product. There are cases where a static image cannot demonstrate all the details of the product. 
 
 The `Image360Viewer` has support for `React Native CLI` and `Expo`. This library allows the user to explore and have the freedom to view all product details in 360 degrees.
+
+
+Image360Viewer loads a sequence of images that rotates with a user touch interaction.
+
+![Vector Images](./assets/vector-images.png)
+
 
 ## 🗺 Getting started
 Install the library using:
@@ -45,7 +53,7 @@ Image360viewer has the following properties:
 | :-----------                   | :----------                               |
 | `height?: number`              | Image height default is 250.              |
 | `width?: number`               | Image width default is 250.               |
-| `images?: ImageProps[]`        | IVector images to rotate.                 |
+| `images?: ImageProps[]`        | Vector images to rotate.                 |
 | `resizeMode?: ImageResizeMode` | Image display mode. Default is contain.   |
 | `rotationRatio?: number`       | The drag distance compares to 180 degree. |
 | `cursorSize?: number`          | Text                                      |
@@ -56,7 +64,7 @@ Image360viewer has the following properties:
 
 
 ## 📱 Demo
-View a demo at Expo
+View a demo at Expo Web:
 
 
 
