@@ -78,7 +78,7 @@ export function Image360viewer({
     const rotationByImages = Math.floor(mRotation / rotatePeriod.current.value);
     setImageIndexSelected(rotationByImages);
 
-    if ((gestureState.moveX - cursorSize) > 0 && gestureState.moveX < (width - cursorSize)) {
+    if ((gestureState.moveX - (cursorSize / 2)) > 0 && gestureState.moveX < (width - (cursorSize / 2))) {
       setCursorCurrentPosition(gestureState.moveX);
     }
   }
