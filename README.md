@@ -77,8 +77,7 @@ Click this link to view a example at Expo Web: [Image360viewer Example](https://
 
 ## Contributing 
 
-Obrigado por estar interessado em tornar este pacote melhor. Encorajamos todos a ajudar a melhorar este projeto com novos recursos, correções de bugs e melhorias de desempenho.
-
+Thanks for being interested in making this package better. We encourage everyone to help improve this project with new features, bug fixes and performance improvements.
 
 ## License
 
