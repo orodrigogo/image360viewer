@@ -68,7 +68,7 @@ Image360viewer has the following properties:
 
 
 ## Demo
-View a demo at Expo Web: [Image360viewer Example](exp://exp.host/@rodrigogsantana/Image360viewer-demo)
+View a demo at Expo Web: [Image360viewer Example](https://expo.dev/@rodrigogsantana/Image360viewer-demo)
 
 
 ## Contributing 
