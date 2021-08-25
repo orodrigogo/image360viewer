@@ -9,6 +9,10 @@
 - [👏 Contributing](#contributing)
 - [💜 License](#license)
   
+<p align="center">
+  <img src=".github/assets/previewapp.gif" height="400">
+</p>
+
 
 ## About
 People want to see all the details of a product before they buy it. Being able to view and explore the product gives the user a trusted experience and connects the user with the product. There are cases where a static image cannot demonstrate all the details of the product. 
